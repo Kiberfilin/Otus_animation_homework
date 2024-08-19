@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Otus animation homework</string>
+    <string name="valueAnimatorFragment">ValueAnimator fragment</string>
+    <string name="button_animate_text">Animate</string>
+</resources>

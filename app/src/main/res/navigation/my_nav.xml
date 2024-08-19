@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/examplesFragment">
+
+    <fragment
+        android:id="@+id/examplesFragment"
+        android:name="com.example.otusanimationhomework.ExamplesFragment"
+        android:label="fragment_examples_list"
+        tools:layout="@layout/fragment_examples_list" />
+    <fragment
+        android:id="@+id/valueAnimatorFragment"
+        android:name="com.example.otusanimationhomework.ValueAnimatorFragment"
+        android:label="fragment_value_animator"
+        tools:layout="@layout/fragment_value_animator" />
+</navigation>
