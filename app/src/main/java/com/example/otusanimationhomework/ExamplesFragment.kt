@@ -38,10 +38,15 @@ class ExamplesFragment : Fragment() {
         currentToast = makeText(requireContext(), example.type, Toast.LENGTH_SHORT)
         currentToast?.show()
         when (example) {
-            AnimationExample.VALUE_ANIMATOR -> goToValueAnimatorFragment()
-            AnimationExample.OBJECT_ANIMATOR -> goToObjectAnimatorFragment()
-            else                            -> throw IllegalArgumentException("Не добавлена обработка enum $example")
+            AnimationExample.VALUE_ANIMATOR      -> goToValueAnimatorFragment()
+            AnimationExample.OBJECT_ANIMATOR     -> goToObjectAnimatorFragment()
+            AnimationExample.OBJECT_ANIMATOR_SET -> goToObjectAnimatorSetFragment()
+            else                                 -> throw IllegalArgumentException("Не добавлена обработка enum $example")
         }
+    }
+
+    private fun goToObjectAnimatorSetFragment() {
+        (requireActivity() as MainActivity).navController.navigate(R.id.objectAnimatorSetFragment)
     }
 
     private fun goToObjectAnimatorFragment() {
