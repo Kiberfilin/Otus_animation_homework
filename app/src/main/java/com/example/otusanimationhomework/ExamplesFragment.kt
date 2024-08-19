@@ -39,8 +39,13 @@ class ExamplesFragment : Fragment() {
         currentToast?.show()
         when (example) {
             AnimationExample.VALUE_ANIMATOR -> goToValueAnimatorFragment()
+            AnimationExample.OBJECT_ANIMATOR -> goToObjectAnimatorFragment()
             else                            -> throw IllegalArgumentException("Не добавлена обработка enum $example")
         }
+    }
+
+    private fun goToObjectAnimatorFragment() {
+        (requireActivity() as MainActivity).navController.navigate(R.id.objectAnimatorFragment)
     }
 
     private fun goToValueAnimatorFragment() {
