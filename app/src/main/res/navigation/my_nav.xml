@@ -25,4 +25,9 @@
         android:name="com.example.otusanimationhomework.ObjectAnimatorSetFragment"
         android:label="fragment_object_animator_set"
         tools:layout="@layout/fragment_object_animator_set" />
+    <fragment
+        android:id="@+id/viewPropertyAnimatorFragment"
+        android:name="com.example.otusanimationhomework.ViewPropertyAnimatorFragment"
+        android:label="fragment_view_property_animator"
+        tools:layout="@layout/fragment_view_property_animator" />
 </navigation>
