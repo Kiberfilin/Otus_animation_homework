@@ -78,7 +78,7 @@ class ObjectAnimatorSetFragment : Fragment() {
     }
 
     private fun setValues(animatorSet: AnimatorSet) {
-        binding.header.text = getString(R.string.objectAnimatorFragment)
+        binding.header.text = getString(R.string.objectAnimatorSetFragment)
         binding.button.setOnClickListener {
             animatorSet.start()
         }
