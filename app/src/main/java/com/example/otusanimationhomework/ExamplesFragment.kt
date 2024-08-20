@@ -38,9 +38,24 @@ class ExamplesFragment : Fragment() {
         currentToast = makeText(requireContext(), example.type, Toast.LENGTH_SHORT)
         currentToast?.show()
         when (example) {
-            AnimationExample.VALUE_ANIMATOR -> goToValueAnimatorFragment()
-            else                            -> throw IllegalArgumentException("Не добавлена обработка enum $example")
+            AnimationExample.VALUE_ANIMATOR         -> goToValueAnimatorFragment()
+            AnimationExample.OBJECT_ANIMATOR        -> goToObjectAnimatorFragment()
+            AnimationExample.OBJECT_ANIMATOR_SET    -> goToObjectAnimatorSetFragment()
+            AnimationExample.VIEW_PROPERTY_ANIMATOR -> goToViewPropertyAnimatorFragment()
+            else                                    -> throw IllegalArgumentException("Не добавлена обработка enum $example")
         }
+    }
+
+    private fun goToViewPropertyAnimatorFragment() {
+        (requireActivity() as MainActivity).navController.navigate(R.id.viewPropertyAnimatorFragment)
+    }
+
+    private fun goToObjectAnimatorSetFragment() {
+        (requireActivity() as MainActivity).navController.navigate(R.id.objectAnimatorSetFragment)
+    }
+
+    private fun goToObjectAnimatorFragment() {
+        (requireActivity() as MainActivity).navController.navigate(R.id.objectAnimatorFragment)
     }
 
     private fun goToValueAnimatorFragment() {

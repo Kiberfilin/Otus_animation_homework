@@ -2,4 +2,7 @@
     <string name="app_name">Otus animation homework</string>
     <string name="valueAnimatorFragment">ValueAnimator fragment</string>
     <string name="button_animate_text">Animate</string>
+    <string name="objectAnimatorFragment">ObjectAnimator fragment</string>
+    <string name="objectAnimatorSetFragment">ObjectAnimatorSet fragment</string>
+    <string name="viewPropertyAnimatorFragment">ViewPropertyAnimator fragment</string>
 </resources>

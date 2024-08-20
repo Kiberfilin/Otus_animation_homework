@@ -15,4 +15,19 @@
         android:name="com.example.otusanimationhomework.ValueAnimatorFragment"
         android:label="fragment_value_animator"
         tools:layout="@layout/fragment_value_animator" />
+    <fragment
+        android:id="@+id/objectAnimatorFragment"
+        android:name="com.example.otusanimationhomework.ObjectAnimatorFragment"
+        android:label="fragment_object_animator"
+        tools:layout="@layout/fragment_object_animator" />
+    <fragment
+        android:id="@+id/objectAnimatorSetFragment"
+        android:name="com.example.otusanimationhomework.ObjectAnimatorSetFragment"
+        android:label="fragment_object_animator_set"
+        tools:layout="@layout/fragment_object_animator_set" />
+    <fragment
+        android:id="@+id/viewPropertyAnimatorFragment"
+        android:name="com.example.otusanimationhomework.ViewPropertyAnimatorFragment"
+        android:label="fragment_view_property_animator"
+        tools:layout="@layout/fragment_view_property_animator" />
 </navigation>
